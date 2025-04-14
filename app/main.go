@@ -6,7 +6,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintln(w, "Hello from vpc endpoint!")
+    fmt.Fprintln(w, "Hello from vpc endpoint! its working")
 }
 
 func main() {
