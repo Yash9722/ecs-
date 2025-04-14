@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: <your-task-def-arn>
+        LoadBalancerInfo:
+          ContainerName: "my-ecr"
+          ContainerPort: 8080
